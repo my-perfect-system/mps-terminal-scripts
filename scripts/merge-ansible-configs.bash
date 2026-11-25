@@ -10,20 +10,20 @@ LOCBIN="$LOCHOME/.local/bin"
 LOCETC="/etc"
 
 # Update repo configs
-# cp -r "$LOCCONF"/nvim/* "$REPO_DIR"/mps/mps-terminal-nvim/config/nvim/
-cp "$LOCHOME"/.vimrc "$REPO_DIR"/mps/mps-terminal-vim/config/vim/
-cp "$LOCBIN"/*.bash "$REPO_DIR"/mps/mps-terminal-scripts/scripts
-cp "$LOCETC"/bash_aliases.d/.bashrc_alias_* "$REPO_DIR"/mps/mps-terminal-bash-aliases/bash_aliases.d
+# cp -r "$LOCCONF"/nvim/* "$REPO_DIR"/mps-terminal/mps-terminal-nvim/config/nvim/
+cp "$LOCHOME"/.vimrc "$REPO_DIR"/mps-terminal/mps-terminal-vim/config/vim/
+cp "$LOCBIN"/*.bash "$REPO_DIR"/mps-terminal/mps-terminal-scripts/scripts
+cp "$LOCETC"/bash_aliases.d/.bashrc_alias_* "$REPO_DIR"/mps-terminal/mps-terminal-bash-aliases/bash_aliases.d
 
 # Update Anisble files
 ROLES_TERM="$REPO_DIR"/odem-terminal/roles
 cp -r "$LOCCONF"/bashrc/.* "$ROLES_TERM"/bash/files/dotfiles/.config/bashrc
 rm -rf "$ROLES_TERM"/bash/files/dotfiles/.config/bashrc/.bash_history
 
-cp -r "$LOCCONF"/kitty/kitty.conf "$REPO_DIR"/mps/mps-terminal-kitty/config/kitty/
-cp -r "$LOCCONF"/tmuxinator/* "$REPO_DIR"/mps/mps-terminal-tmux/config/tmuxinator/
-cp -r "$LOCCONF"/tmux/tmux.conf "$REPO_DIR"/mps/mps-terminal-tmux/config/tmux/
-cp -r "$LOCCONF"/tmux/tmux.conf.local "$REPO_DIR"/mps/mps-terminal-tmux/config/tmux/
+cp -r "$LOCCONF"/kitty/kitty.conf "$REPO_DIR"/mps-terminal/mps-terminal-kitty/config/kitty/
+cp -r "$LOCCONF"/tmuxinator/* "$REPO_DIR"/mps-terminal/mps-terminal-tmux/config/tmuxinator/
+cp -r "$LOCCONF"/tmux/tmux.conf "$REPO_DIR"/mps-terminal/mps-terminal-tmux/config/tmux/
+cp -r "$LOCCONF"/tmux/tmux.conf.local "$REPO_DIR"/mps-terminal/mps-terminal-tmux/config/tmux/
 
 # # Target dir
 # [[ -f /etc/mps/.env ]] && source /etc/mps/.env
