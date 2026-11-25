@@ -2,7 +2,7 @@
 
 # REPO_DIR=/srv/repo/github/my-perfect-system
 REPO_DIR=/home/jb/repo/github/my-perfect-system
-REPOS=("mps-vim" "mps-nvim" "mps-bash-aliases" "mps-scripts")
+REPOS=("mps-vim" "mps-nvim" "mps-terminal-bash-aliases" "mps-scripts")
 
 LOCHOME="$HOME"
 LOCCONF="$LOCHOME/.config"
@@ -13,7 +13,7 @@ LOCETC="/etc"
 # cp -r "$LOCCONF"/nvim/* "$REPO_DIR"/mps-nvim
 cp "$LOCHOME"/.vimrc "$REPO_DIR"/mps-vim
 cp "$LOCBIN"/*.bash "$REPO_DIR"/mps-scripts/scripts
-cp "$LOCETC"/bash_aliases.d/.bashrc_alias_* "$REPO_DIR"/mps-bash-aliases
+cp "$LOCETC"/bash_aliases.d/.bashrc_alias_* "$REPO_DIR"/mps-terminal-bash-aliases
 
 # Update Anisble files
 ROLES_TERM="$REPO_DIR"/odem-terminal/roles
