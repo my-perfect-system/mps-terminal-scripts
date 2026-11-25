@@ -2,7 +2,7 @@
 
 # REPO_DIR=/srv/repo/github/my-perfect-system
 REPO_DIR=/home/jb/repo/github/my-perfect-system
-REPOS=("mps-vim" "mps-nvim" "mps-terminal-bash-aliases" "mps-scripts")
+REPOS=("mps-terminal-vim" "mps-terminal-nvim" "mps-terminal-bash-aliases" "mps-scripts")
 
 LOCHOME="$HOME"
 LOCCONF="$LOCHOME/.config"
@@ -10,8 +10,8 @@ LOCBIN="$LOCHOME/.local/bin"
 LOCETC="/etc"
 
 # Update repo configs
-# cp -r "$LOCCONF"/nvim/* "$REPO_DIR"/mps-nvim
-cp "$LOCHOME"/.vimrc "$REPO_DIR"/mps-vim
+# cp -r "$LOCCONF"/nvim/* "$REPO_DIR"/mps-terminal-nvim/config/nvim/
+cp "$LOCHOME"/.vimrc "$REPO_DIR"/mps-terminal-vim/config/vim/
 cp "$LOCBIN"/*.bash "$REPO_DIR"/mps-scripts/scripts
 cp "$LOCETC"/bash_aliases.d/.bashrc_alias_* "$REPO_DIR"/mps-terminal-bash-aliases/bash_aliases.d
 
