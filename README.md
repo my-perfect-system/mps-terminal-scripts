@@ -16,7 +16,7 @@ CLI helper scripts of the my-perfect-system (mps) terminal stack, deployed to `~
 curl -fsSL https://raw.githubusercontent.com/my-perfect-system/mps-terminal-scripts/main/bootstrap.sh | bash
 ```
 
-All methods copy `scripts/` to the current user's `~/.local/bin` (mode 0700); one clone per host (`${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system}`), shared by all users.
+All methods copy `scripts/` to the current user's `~/.local/bin` (mode 0700); one clone per host (`${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system/mps}`), shared by all users.
 
 ## Usage
 
